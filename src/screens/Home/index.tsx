@@ -7,6 +7,8 @@ import { CategorySelect } from '../../components/CategorySelect';
 import { ListHeader } from '../../components/ListHeader';
 import { Appointment } from '../../components/Appointment';
 import { ListDivider } from '../../components/ListDivider';
+import { Background } from "../../components/Background";
+
 
 import { styles } from './styles';
 
@@ -24,8 +26,21 @@ export function Home() {
       },
       category: '1',
       date: '22/06/ ás 20:40h',
-      description: '[e hoje que vamos chegar ao challenger sem perder uma partida da md10'
+      description: 'é hoje que vamos chegar ao challenger sem perder uma partida da md10'
+    },
+    {
+      id: '2',
+      guild: {
+        id: '2',
+        name: 'Lendários',
+        icon: null,
+        owner: true
+      },
+      category: '2',
+      date: '22/06/ ás 20:40h',
+      description: 'é0 hoje que vamos chegar ao challenger sem perder uma partida da md10'
     }
+
   ]
 
   function handleCategorySelect(categoryId: string) {
@@ -33,6 +48,7 @@ export function Home() {
   }
 
   return (
+    <Background>
     <View style={styles.container}>
       <View style={styles.header}>
         <Profile />
@@ -63,6 +79,7 @@ export function Home() {
 
       </View>
 
-    </View>
+      </View>
+      </Background>
   );
 }

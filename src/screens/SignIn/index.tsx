@@ -8,6 +8,8 @@ import {
 } from "react-native";
 
 import { ButtonIcon } from "../../components/ButtonIcon";
+import { Background } from "../../components/Background";
+
 import IllustrationImg from '../../assets/illustration.png';
 import { styles } from "./styles";
 import { useNavigation } from "@react-navigation/native";
@@ -21,7 +23,8 @@ export function SignIn() {
     navigation.navigate('Home');
   
   }
-   return(
+  return (
+     <Background>
     <View style={styles.container}>
 
       <Image 
@@ -54,7 +57,8 @@ export function SignIn() {
         
         />
       </View>
-    </View>
+      </View>
+      </Background>
 
   );
 }

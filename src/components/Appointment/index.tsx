@@ -29,7 +29,7 @@ export type AppointmentProps = {
 type Props = RectButtonProps & {
     data: AppointmentProps
 }
-
+2345
 export function Appointment({
     data,
     ...rest
